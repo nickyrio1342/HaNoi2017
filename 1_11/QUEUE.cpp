@@ -1,3 +1,7 @@
+/* Nhận xét:
+    1, Việc sắp từng hàng và từng cột độc lập với nhau.
+    2, Tính chất trung vị
+*/
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i<=b ; i++)
 #define FORD(i, a, b) for (int i = a; i>=b; i--)
