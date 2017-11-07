@@ -1,4 +1,7 @@
-
+/*Để kiểm tra 1 điểm có thuộc trong 1 đa giác hay không, 
+ta có thể kẻ 1 đường thẳng từ ngoài đến điểm đó, 
+nếu nó cắt một số lẻ lần cạnh thì điểm đó thuộc đa giác
+*/
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i<=b ; i++)
 #define FORD(i, a, b) for (int i = a; i>=b; i--)
