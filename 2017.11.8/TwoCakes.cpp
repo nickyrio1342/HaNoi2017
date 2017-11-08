@@ -1,10 +1,10 @@
 /* Nếu không tồn tại a[i] = b[i] -> Kết quả là n. 
 Gọi dp[i] là thời gian ngắn nhất để xử lí xong hết các thằng từ a[j..n] và b[k..n] với a[j] = b[k] = i.
-Xét với thằng u, gọi dis[u] = a[j] - b[k] với a[j] = b[k] = u.
+Xét với thằng u, gọi dis[u] = j - k với a[j] = b[k] = u.
 Có 2 trường hợp : 
-  + Nếu mình cho thằng ở dãy A làm trước mình sẽ lấy tiếp các thằng từ a[j + 1..n] và b[k..n] nếu không tồn tại dis[v] = k + 1
-   hoặc là chạy đến thằng v gần nhất (thõa dis[v] = k + 1 )và thừa hưởng kq từ dp[v]
-  + Tương tự với trường hợp cho thằng ở dãy B đi trước
+  + Nếu mình cho thằng ở dãy A làm trước mình sẽ lấy tiếp các thằng từ a[j + 1..n] và b[k..n] nếu không tồn tại dis[v] = dis[u] + 1
+   hoặc là chạy đến thằng v gần nhất (thõa dis[v] = dis[v] + 1 )và thừa hưởng kq từ dp[v]
+  + Tương tự với trường hợp cho thằng ở dãy B đi trước (dis[v] = dis[u] - 1)
  DPT O(nlogn)
  */
 #include <bits/stdc++.h>
