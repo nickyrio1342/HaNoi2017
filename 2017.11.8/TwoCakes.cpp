@@ -3,9 +3,9 @@ Gọi dp[i] là thời gian ngắn nhất để xử lí xong hết các thằng
 Xét với thằng u, gọi dis[u] = a[j] - b[k] với a[j] = b[k] = u.
 Có 2 trường hợp : 
   + Nếu mình cho thằng ở dãy A làm trước mình sẽ lấy tiếp các thằng từ a[j + 1..n] và b[k..n] nếu không tồn tại dis[v] = k + 1
-   hoặc là chạy đến thằng v và thừa hưởng kq từ dp[v]
+   hoặc là chạy đến thằng v gần nhất (thõa dis[v] = k + 1 )và thừa hưởng kq từ dp[v]
   + Tương tự với trường hợp cho thằng ở dãy B đi trước
- DPT O(n)
+ DPT O(nlogn)
  */
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i<=b ; i++)
