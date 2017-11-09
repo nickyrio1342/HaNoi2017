@@ -1,3 +1,8 @@
+/*
+Chúng ta sẽ sort danh sách kề của mỗi đỉnh tăng dần theo trọng số của cạnh.
+...
+Không biết nên nói gì tiếp theo...
+*/
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i<=b ; i++)
 #define FORD(i, a, b) for (int i = a; i>=b; i--)
