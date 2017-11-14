@@ -1,3 +1,6 @@
+/*
+    + Sử dụng QHĐ kết hợp đảo nhãn
+*/
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i<=b ; i++)
 #define FORD(i, a, b) for (int i = a; i>=b; i--)
