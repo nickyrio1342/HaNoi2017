@@ -67,7 +67,7 @@ int main() {
         REP(j, n) if (s[i][j] == 'x') cnt++;
         if (cnt == 0) continue;
         if (cnt == 1) {
-            if (END[i + 1]) {
+            if (END[i + 1] || k == 1) {
                 cout<<0<<' '<<ii<<' '<<n<<' '<<n;
                 return 0;
             }
@@ -75,6 +75,10 @@ int main() {
                 cout<<0<<' '<<ii<<' '<<n<<' '<<i + 1<<'\n';
                 ii = i + 1;
                 k--;
+                if (k == 1) {
+                    cout<<0<<' '<<i + 1<<' '<<n<<' '<<n;
+                    return 0;
+                }
             }
         }
         else {
